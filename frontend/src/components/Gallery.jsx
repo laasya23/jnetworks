@@ -1,37 +1,37 @@
-import React from 'react';
+import React from "react";
 
 const Gallery = () => {
   const galleryImages = [
     {
-      src: 'https://thumbs.dreamstime.com/b/professional-moving-service-aids-couple-to-their-new-house-teamwork-newlywed-moves-aided-delivery-team-employees-work-343310478.jpg',
-      alt: 'Professional moving team in action',
-      category: 'Team'
+      src: "https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg",
+      alt: "Image1",
+      category: "c1",
     },
     {
-      src: 'https://tse4.mm.bing.net/th/id/OIP.yDkbqgzNxBdJ2qojHjXIiAHaDm?pid=Api&P=0&h=180',
-      alt: 'Careful packing of household items',
-      category: 'Packing'
+      src: "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg",
+      alt: "Image2",
+      category: "c2",
     },
     {
-      src: 'https://tse2.mm.bing.net/th/id/OIP.mJODn9O1pugioRNeQIKD0gHaE7?pid=Api&P=0&h=180',
-      alt: 'Loading truck with furniture',
-      category: 'Loading'
+      src: "https://images.pexels.com/photos/2566581/pexels-photo-2566581.jpeg",
+      alt: "Image3",
+      category: "c3",
     },
     {
-      src: 'https://tse4.mm.bing.net/th/id/OIP.1JBuh1lu9OMnma6v7R2I_wHaEJ?pid=Api&P=0&h=180',
-      alt: 'Moving truck ready for delivery',
-      category: 'Transport'
+      src: "https://images.pexels.com/photos/163047/network-network-cables-connection-plug-163047.jpeg",
+      alt: "Image4",
+      category: "c4",
     },
     {
-      src: 'https://tse3.mm.bing.net/th/id/OIP.BvEERHsHuvS-6FBU7SU8aAHaE8?pid=Api&P=0&h=180',
-      alt: 'Secure packaging of fragile items',
-      category: 'Packing'
+      src: "https://media.istockphoto.com/id/1402843465/photo/using-phone-automation.jpg?b=1&s=612x612&w=0&k=20&c=ZANIeRyoCZLMjUJGxkve53jdan-uNxNUqT8FXDQfjzQ=",
+      alt: "Image5",
+      category: "c5",
     },
     {
-      src: 'https://tse4.mm.bing.net/th/id/OIP.oWSTLORk8MBwzNGuNo4JKQHaEu?pid=Api&P=0&h=180',
-      alt: 'Office relocation services',
-      category: 'Office'
-    }
+      src: "https://images.pexels.com/photos/955395/pexels-photo-955395.jpeg",
+      alt: "Image6",
+      category: "c6",
+    },
   ];
 
   return (
@@ -42,18 +42,18 @@ const Gallery = () => {
             Our Work in Action
           </h2>
           <p className="text-xl text-light-charcoal font-lato max-w-3xl mx-auto leading-relaxed">
-            Take a look at our professional team in action. These images showcase our 
-            commitment to quality service and careful handling of your belongings.
+            Take a look at our professional team in action. These images
+            showcase our commitment to quality service
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <img 
+              <img
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -63,9 +63,7 @@ const Gallery = () => {
                   <span className="bg-orange px-3 py-1 rounded-full font-lato font-medium text-sm">
                     {image.category}
                   </span>
-                  <p className="font-lato mt-2 text-sm px-4">
-                    {image.alt}
-                  </p>
+                  <p className="font-lato mt-2 text-sm px-4">{image.alt}</p>
                 </div>
               </div>
             </div>
@@ -78,18 +76,21 @@ const Gallery = () => {
               Experience the Difference
             </h3>
             <p className="text-light-charcoal font-lato text-lg mb-6">
-              Our professional approach and attention to detail set us apart. 
-              Let us make your next move a stress-free experience.
+              Our professional approach and attention to detail set us apart.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button 
-                onClick={() => document.getElementById('quote').scrollIntoView({ behavior: 'smooth' })}
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("quote")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
                 className="bg-orange text-white px-6 py-3 rounded-lg font-lato font-semibold hover:bg-dark-orange transition-colors duration-200 shadow-lg hover:shadow-xl"
               >
                 Get Your Quote
               </button>
-              <a 
-                href="tel:+919739913248"
+              <a
+                href="tel:+919849532155"
                 className="border-2 border-navy text-navy px-6 py-3 rounded-lg font-lato font-semibold hover:bg-navy hover:text-white transition-colors duration-200 text-center shadow-lg hover:shadow-xl"
               >
                 Call Now

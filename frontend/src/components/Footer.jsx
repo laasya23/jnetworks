@@ -17,12 +17,12 @@ const Footer = () => {
         <div className="py-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-inter font-bold mb-6">
+            <h3 className="text-xl font-oswald font-bold mb-6">
               Arun Packers & Movers
             </h3>
-            <p className="font-lato text-white/80 mb-6 leading-relaxed">
-              Your trusted partner for all moving and relocation needs across India. 
-              Professional, reliable, and committed to excellence nationwide.
+            <p className="font-opensans text-white/80 mb-6 leading-relaxed">
+              Your trusted partner for all moving and relocation needs in Bengaluru. 
+              Professional, reliable, and committed to excellence.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white/60 hover:text-orange transition-colors duration-200">
@@ -39,7 +39,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-inter font-bold mb-6">Quick Links</h4>
+            <h4 className="text-lg font-oswald font-bold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {[
                 { name: 'Home', id: 'hero' },
@@ -52,7 +52,7 @@ const Footer = () => {
                 <li key={link.id}>
                   <button 
                     onClick={() => scrollToSection(link.id)}
-                    className="font-lato text-white/80 hover:text-orange transition-colors duration-200"
+                    className="font-opensans text-white/80 hover:text-orange transition-colors duration-200"
                   >
                     {link.name}
                   </button>
@@ -63,8 +63,8 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-inter font-bold mb-6">Our Services</h4>
-            <ul className="space-y-3 font-lato text-white/80">
+            <h4 className="text-lg font-oswald font-bold mb-6">Our Services</h4>
+            <ul className="space-y-3 font-opensans text-white/80">
               <li>Residential Moving</li>
               <li>Office Relocation</li>
               <li>Vehicle Transportation</li>
@@ -76,14 +76,14 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-inter font-bold mb-6">Contact Info</h4>
+            <h4 className="text-lg font-oswald font-bold mb-6">Contact Info</h4>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <Phone className="text-orange mt-1" size={18} />
                 <div>
                   <a 
                     href="tel:+919739913248" 
-                    className="font-lato text-white/80 hover:text-orange transition-colors duration-200"
+                    className="font-opensans text-white/80 hover:text-orange transition-colors duration-200"
                   >
                     +91 97399 13248
                   </a>
@@ -95,7 +95,7 @@ const Footer = () => {
                 <div>
                   <a 
                     href="mailto:info@bengalurupackers.com" 
-                    className="font-lato text-white/80 hover:text-orange transition-colors duration-200"
+                    className="font-opensans text-white/80 hover:text-orange transition-colors duration-200"
                   >
                     info@bengalurupackers.com
                   </a>
@@ -105,7 +105,7 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="text-orange mt-1" size={18} />
                 <div>
-                  <p className="font-lato text-white/80">
+                  <p className="font-opensans text-white/80">
                     HSR Layout, Bengaluru<br />
                     Karnataka 560102
                   </p>
@@ -118,7 +118,7 @@ const Footer = () => {
                 href="https://wa.me/919876543210?text=Hi%2C%20I%20need%20help%20with%20my%20move"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-600 text-white px-4 py-2 rounded-lg font-lato font-medium hover:bg-green-700 transition-colors duration-200 inline-flex items-center gap-2"
+                className="bg-green-600 text-white px-4 py-2 rounded-lg font-opensans font-medium hover:bg-green-700 transition-colors duration-200 inline-flex items-center gap-2"
               >
                 WhatsApp Chat
               </a>
@@ -129,17 +129,17 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="font-lato text-white/60 text-sm">
+            <p className="font-opensans text-white/60 text-sm">
               © {currentYear} Arun Packers & Movers. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="font-lato text-white/60 hover:text-orange text-sm transition-colors duration-200">
+              <a href="#" className="font-opensans text-white/60 hover:text-orange text-sm transition-colors duration-200">
                 Privacy Policy
               </a>
-              <a href="#" className="font-lato text-white/60 hover:text-orange text-sm transition-colors duration-200">
+              <a href="#" className="font-opensans text-white/60 hover:text-orange text-sm transition-colors duration-200">
                 Terms of Service
               </a>
-              <a href="#" className="font-lato text-white/60 hover:text-orange text-sm transition-colors duration-200">
+              <a href="#" className="font-opensans text-white/60 hover:text-orange text-sm transition-colors duration-200">
                 Sitemap
               </a>
             </div>

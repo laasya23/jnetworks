@@ -1,71 +1,77 @@
-import React from 'react';
-import { Home, Building, Car, Package, Wrench, Shield } from 'lucide-react';
+import React from "react";
+import { Wifi, Zap, Download, Clock, Shield, Headphones } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Home,
-      title: 'Residential Moving',
-      description: 'Complete household relocation services across India with careful handling of your belongings.',
-      features: ['Interstate & local moves', 'Furniture disassembly/assembly', 'Fragile item protection', 'Room-to-room unpacking']
+      icon: Wifi,
+      title: "High-Speed Internet",
+      description: "Experience lightning-fast speeds with our fiber network",
+      features: [],
     },
     {
-      icon: Building,
-      title: 'Office Relocation',
-      description: 'Professional office moving services across India with minimal business disruption.',
-      features: ['Pan-India office moves', 'IT equipment handling', 'Document management', 'Weekend/after-hours moving']
+      icon: Download,
+      title: "Unlimited Data",
+      description: "True unlimited with 1000GB FUP on all plans",
+      features: [],
     },
     {
-      icon: Car,
-      title: 'Vehicle Transportation',
-      description: 'Safe and secure transportation of cars and bikes anywhere in India.',
-      features: ['All India car transport', 'Door-to-door service', 'Insurance coverage', 'GPS tracking']
+      icon: Zap,
+      title: "99.9% Uptime",
+      description: "Reliable connection with minimal downtime",
+      features: [],
     },
     {
-      icon: Package,
-      title: 'Packing Services',
-      description: 'Expert packing using premium materials to ensure item safety.',
-      features: ['Quality packing materials', 'Item categorization', 'Inventory management']
+      icon: Headphones,
+      title: "24/7 Support",
+      description: "Round-the-clock technical assistance",
+      features: [],
     },
     {
-      icon: Wrench,
-      title: 'Loading & Unloading',
-      description: 'Professional loading and unloading services with proper equipment.',
-      features: ['Heavy lifting equipment', 'Safety protocols', 'Damage-free handling']
+      icon: Clock,
+      title: "Quick Installation",
+      description:
+        "Same-day installation service with professional setup and configuration",
+      features: [],
     },
     {
       icon: Shield,
-      title: 'Storage Solutions',
-      description: 'Secure warehouse storage facilities for short and long-term needs.',
-      features: ['Climate-controlled', '24/7 security', 'Easy access']
-    }
+      title: "Secure Network",
+      description:
+        "Advanced security measures to protect your online activities and data",
+      features: [],
+    },
   ];
 
   return (
     <section id="services" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-inter font-bold text-navy mb-6">
+          <h2 className="text-4xl font-oswald font-bold text-navy mb-6">
             Our Professional Services
           </h2>
-          <p className="text-xl text-light-charcoal font-lato max-w-3xl mx-auto leading-relaxed">
-            We offer comprehensive moving solutions tailored to meet your specific needs. 
-            From residential moves to commercial relocations, we have you covered.
+          <p className="text-xl text-charcoal font-opensans max-w-3xl mx-auto leading-relaxed">
+            {" "}
+            Experience the best internet service in Sangareddy with our premium
+            features
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-card-gray rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border-gray hover:border-orange/20">
-              <div className="bg-orange/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
+            <div
+              key={index}
+              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <div className="bg-orange/20 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
                 <service.icon className="text-orange" size={28} />
               </div>
-              
-              <h3 className="text-xl font-inter font-bold text-navy mb-4">
+
+              <h3 className="text-xl font-oswald font-bold text-navy mb-4">
                 {service.title}
               </h3>
-              
-              <p className="text-light-charcoal font-lato mb-6 leading-relaxed">
+
+              <p className="text-charcoal font-opensans mb-6 leading-relaxed">
                 {service.description}
               </p>
 
@@ -73,7 +79,9 @@ const Services = () => {
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-orange rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-text-gray font-lato text-sm">{feature}</span>
+                    <span className="text-charcoal font-opensans text-sm">
+                      {feature}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -82,12 +90,16 @@ const Services = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-light-charcoal font-lato text-lg mb-6">
+          <p className="text-charcoal font-opensans text-lg mb-6">
             Need a custom solution? We're here to help!
           </p>
-          <button 
-            onClick={() => document.getElementById('quote').scrollIntoView({ behavior: 'smooth' })}
-            className="bg-orange text-white px-8 py-3 rounded-lg font-lato font-semibold hover:bg-dark-orange transition-colors duration-200 shadow-lg hover:shadow-xl"
+          <button
+            onClick={() =>
+              document
+                .getElementById("quote")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+            className="bg-orange text-white px-8 py-3 rounded-lg font-opensans font-semibold hover:bg-orange/90 transition-colors duration-200"
           >
             Get Custom Quote
           </button>
